@@ -1,6 +1,6 @@
 # saas-review-scrapper
 SaaS Product Review Scraper
-This Python script allows you to scrape product reviews from G2 and Capterra for a specific company and date range. The collected reviews are saved in a structured JSON format.
+This Python script allows you to scrape product reviews from G2 and Capterra  or 3rd Party (Review API) for a specific company and date range. The collected reviews are saved in a structured JSON format.
 
 🚀 Features
 Scrapes reviews from G2 or Capterra
@@ -17,7 +17,7 @@ Before running the script, install the necessary Python packages:
 bash
 Copy
 Edit
-pip install requests beautifulsoup4 lxml
+pip install requests beautifulsoup4 lxml selenium
 ⚙️ Usage
 Run the script using:
 
@@ -25,6 +25,8 @@ bash
 Copy
 Edit
 python scrape_reviews.py
+python scrape_reviews_selenium.py (Review using selenium)
+python scrape_reviews_reviewapi.py (Review using third party)
 You will be prompted to input:
 
 Company Name: The company/product as it appears in the URL (e.g., hubspot-crm for https://www.g2.com/products/hubspot-crm/reviews)
